@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-Everyday</title>
+    <link rel="stylesheet" href="weatherapp.css">
+    <script src="weatherapp.js" defer></script> <!-- Moved script to the end and added defer -->
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" id="city-input" placeholder="Enter city name" spellcheck="false"> 
+            <button id="search-button"><img src="images/search.png.jpg" alt="Search"></button>
+        </div>
+        <div class="weather">
+            <img src="images/blow.gif" class="weather-icon" alt="Weather Icon">
+            <h1 id="temp">Temperature: --°C</h1> <!-- Changed to ID -->
+            <h2 id="city">City: --</h2> <!-- Changed to ID -->
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity-icon-1024x838-vqbjj1sp.png" alt="Humidity Icon">
+                    <div>
+                        <p id="humidity">Humidity: --%</p> <!-- Changed to ID -->
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/image_processing20200728-30461-c0zbnk.png" alt="Wind Speed Icon">
+                    <div>
+                        <p id="wind">Wind Speed: -- km/h</p> <!-- Changed to ID -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
